@@ -1,0 +1,8 @@
+﻿  graspList.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+c:\users\rleroy\documents\github\grasp\grasplist.cpp(647): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+c:\users\rleroy\documents\github\grasp\grasplist.cpp(956): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+BigIcon.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+  grasp95.vcxproj -> C:\Users\rleroy\Documents\GitHub\GRASP\.\Debug\Grasp2004.exe
+  grasp95.vcxproj -> .\Debug/grasp97.pdb (Full PDB)

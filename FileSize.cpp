@@ -23,13 +23,18 @@ LONGLONG CGraspFileSize::GetSize()
 	return ullFileSize;
 }
 
-const CGraspFileSize::operator = (LONGLONG ullSize)
+void CGraspFileSize::SetSize(LONGLONG ullSize)
 {
-
 	ullFileSize = ullSize;
-	return 0;
+	return;
 }
-
+/*
+CGraspFileSize CGraspFileSize::operator = (LONGLONG ullSize)
+{
+	ullFileSize = ullSize;
+	return this;
+}
+*/
 int CGraspFileSize::SetName(CString strName)
 {
 	strFileName = strName;

@@ -100,7 +100,7 @@ BOOL CChildFrame::GetToolText( UINT nID, CString& strTipText )
 	return TRUE;
 }
 
-#define _countof(array) (sizeof(array)/sizeof(array[0]))
+//#define _countof(array) (sizeof(array)/sizeof(array[0]))
 
 BOOL CChildFrame::OnToolTipText(UINT nID, NMHDR* pNMHDR,LRESULT*pResult)
 {

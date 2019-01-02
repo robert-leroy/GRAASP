@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{02fc4b84-4592-411e-9c38-d66b43a27cef}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{728bb307-d1f6-4937-bbc4-c953e4be1704}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{2a1b95a8-cb5e-4838-9be3-4ccf83792385}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BigIcon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiskProp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DriveBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FolderProp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="grasp95.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graspDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graspList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graspTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shareware.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Splash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBarEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="grasp95.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ToolBarEx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiskProp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DriveBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumObj2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FolderProp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="grasp95.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graspDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graspList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graspTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shareware.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Splash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\drivebar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\DriveBar256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\grasp95.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\graspDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\GraspSplash.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hcdrivebar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hcdrivebard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hcdrivebarh.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hctoolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hctoolbard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\hctoolbarh.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ledgend2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\legend1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\list.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\logo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\rjl.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Splsh16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\tree.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Vero Logo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\grasp95.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

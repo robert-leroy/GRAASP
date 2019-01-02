@@ -824,13 +824,13 @@ void CGraspList::DeleteItem()
 			// Add the deleted size back into the directory
 			HTREEITEM hItem = pDoc->m_pgraspTree->GetSelectedItem();
 			CGraspFileSize* ps = (CGraspFileSize*) pDoc->m_pgraspTree->GetItemData(hItem);
-			*ps = ps->GetSize() - pSize->GetSize();
+			ps->SetSize(ps->GetSize() - pSize->GetSize());
 
 			// This includes all parent items too...
 			while (hItem = pDoc->m_pgraspTree->GetParentItem(hItem))
 			{
 				CGraspFileSize* ps = (CGraspFileSize*) pDoc->m_pgraspTree->GetItemData(hItem);
-				*ps = ps->GetSize() - pSize->GetSize();
+				ps->SetSize(ps->GetSize() - pSize->GetSize());
 			}
 
 			// Now, if it's a directory, go through and delete everything!

@@ -12,7 +12,8 @@ private:
 public:
 	CGraspFileSize();
 	~CGraspFileSize();
-	const   operator = (LONGLONG dblSize);
+	//CGraspFileSize CGraspFileSize::operator = (LONGLONG dblSize);
+	void    SetSize(LONGLONG ullSize);
 	int	    SetName(CString strName);
 	CString GetName();
 	LONGLONG  GetSize();

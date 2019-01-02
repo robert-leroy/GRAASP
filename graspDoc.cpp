@@ -143,6 +143,7 @@ BOOL CGraspDoc::ScanDrive()
 {
 
 	CWaitCursor Csr;
+	int nDrivePos = 0;
 
 	m_bTopTenShowing = FALSE;
 
@@ -218,7 +219,7 @@ RETRY:
 	g_strDriveNames[nDrivePos].ReleaseBuffer();
 	tvInsertStruct.item.cchTextMax = g_strDriveNames[nDrivePos].GetLength();
 	tvInsertStruct.item.lParam = (LPARAM) pGraspSize;
-	*pGraspSize = 0;
+	pGraspSize->SetSize(0);
 	m_hRootItem = m_pgraspTree->InsertItem(&tvInsertStruct);
 
 	// Find First Item
@@ -227,7 +228,7 @@ RETRY:
 	m_strVolumeName = g_strDriveNames[nDrivePos];
 
 	// Update Tree Item
-	*pGraspSize   = m_llSelectedSize;
+	pGraspSize->SetSize(m_llSelectedSize);
 	pGraspSize->SetName(m_strVolumeName);
 	pGraspSize->SetFileType(g_strDriveNames[nDrivePos]);
 	m_llDriveSize = m_llSelectedSize;
@@ -318,7 +319,7 @@ LONGLONG CGraspDoc::ScanSubDir(CString strDir, HTREEITEM hParentItem)
 			{
 
 				pGraspSize = new CGraspFileSize;
-				*pGraspSize = 0;
+				pGraspSize->SetSize(0);
     
 				// Insert Item into the Tree
 				tvInsertStruct.hParent = hParentItem;
@@ -344,7 +345,7 @@ LONGLONG CGraspDoc::ScanSubDir(CString strDir, HTREEITEM hParentItem)
 					return (-1);
 
 				// Update Tree Item
-				*pGraspSize = llSubDirSize;
+				pGraspSize->SetSize(llSubDirSize);
 				pGraspSize->SetName(strFileName);
 				pGraspSize->SetFileType("File Folder");
 
@@ -449,7 +450,7 @@ BOOL CGraspDoc::ListFromTree()
 			SHGetFileInfo(strPath, NULL, &sfi, sizeof(sfi), SHGFI_TYPENAME | SHGFI_DISPLAYNAME | SHGFI_ICON | SHGFI_SMALLICON | SHGFI_TYPENAME);
 
 			pGraspSize  = (CGraspFileSize*)m_pgraspTree->GetItemData(hTreeItem);
-			*pSize = pGraspSize->GetSize();
+			pSize->SetSize(pGraspSize->GetSize());
 			pSize->SetName(strItemText);
 			pSize->SetFileType(sfi.szTypeName);
 			pSize->SetDir();
@@ -536,7 +537,7 @@ BOOL CGraspDoc::ListFromDir(CString strDir)
 				lvItem.iSubItem = 0;
 				lvItem.iImage = sfi.iIcon;
 				lvItem.lParam = (LPARAM) pGraspSize;
-				*pGraspSize = llItemData;
+				pGraspSize->SetSize(llItemData);
 				pGraspSize->SetName(strItemText);
 				pGraspSize->SetFileType(sfi.szTypeName);
                 pGraspSize->SetFileCount(1);
@@ -619,16 +620,16 @@ void CGraspDoc::OnFileProperties()
 
 //		dlgProp.m_strTotal.Format("%I64d",i64TotalBytes.QuadPart);
 		CGraspFileSize dSize;
-		dSize = i64TotalBytes.QuadPart;
+		dSize.SetSize(i64TotalBytes.QuadPart);
 		dlgProp.m_strTotal = dSize.FormatSize();
 
 
 //		dlgProp.m_strAvail.Format("%I64d",i64FreeBytesToCaller.QuadPart);
-		dSize = i64FreeBytes.QuadPart;
+		dSize.SetSize(i64FreeBytes.QuadPart);
 		dlgProp.m_strAvail = dSize.FormatSize();
 
 //		dlgProp.m_strGrasp.Format("%I64d",i64TotalBytes.QuadPart - i64FreeBytes.QuadPart);
-		dSize = i64TotalBytes.QuadPart - i64FreeBytes.QuadPart;
+		dSize.SetSize(i64TotalBytes.QuadPart - i64FreeBytes.QuadPart);
 		dlgProp.m_strGrasp = dSize.FormatSize();
 
 		dlgProp.m_llFreeSpace = i64FreeBytes.QuadPart;
@@ -643,13 +644,13 @@ void CGraspDoc::OnFileProperties()
 		LONGLONG llSpaceUsed = llDiskSize - llFreeSpace;
 
 		CGraspFileSize dSize;
-		dSize = llDiskSize;
+		dSize.SetSize(llDiskSize);
 		dlgProp.m_strTotal = dSize.FormatSize();
 
-		dSize = llFreeSpace;
+		dSize.SetSize(llFreeSpace);
 		dlgProp.m_strAvail = dSize.FormatSize();
 
-		dSize = llSpaceUsed;
+		dSize.SetSize(llSpaceUsed);
 		dlgProp.m_strGrasp = dSize.FormatSize();
 
 		dlgProp.m_llFreeSpace = llFreeSpace;
@@ -817,7 +818,7 @@ void CGraspDoc::OnGraspTopten()
 				pSize->SetFileType(aGraspSize[z]->GetFileType());
 				pSize->SetItem(aGraspSize[z]->GetItem());
 				pSize->SetName(aGraspSize[z]->GetName());
-				*pSize = aGraspSize[z]->GetSize();
+				pSize->SetSize(aGraspSize[z]->GetSize());
 
 				// Insert the item NAME into the ListCtrl
 				lvItem.mask = LVIF_TEXT | LVIF_PARAM | LVIF_IMAGE;
