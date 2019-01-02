@@ -1,0 +1,15 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+REVISIONS=No
+LCID=0x409 0x0 0x0 ; English (United States)
+REPORT=Yes
+CONTENTS=Index
+TITLE=Graphical Space Viewer
+COPYRIGHT=2002 Vero Software, LLC
+BMROOT=C:\GRASP\HELP
+ROOT=C:\GRASP\HELP
+HLP=.\grasp_release.hlp
+
+[FILES]
+GRASP_RELEASE.RTF

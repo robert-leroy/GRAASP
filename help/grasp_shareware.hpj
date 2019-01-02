@@ -1,0 +1,10 @@
+[OPTIONS]
+LCID=0x409 0x0 0x0 ; English (United States)
+REPORT=Yes
+TITLE=Graphical Space Viewer
+COPYRIGHT=2002 - Vero Software, LLC
+BMROOT=C:\GRASP\HELP
+HLP=grasp_shareware.hlp
+
+[FILES]
+GRASP_SHAREWARE.RTF
