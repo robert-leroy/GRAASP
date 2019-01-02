@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?>
+<UpgradeLog>
+<Properties><Property Name="Solution" Value="grasp95">
+</Property><Property Name="Solution File" Value="H:\grasp\grasp95.sln">
+</Property><Property Name="Date" Value="Tuesday, August 03, 2004">
+</Property><Property Name="Time" Value="14:24 PM">
+</Property></Properties><Event ErrorLevel="0" Project="H:\grasp\grasp95.vcproj" Source="grasp95.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="H:\grasp\grasp95.vcproj" Source="grasp95.vcproj" Description="Upgraded">
+</Event><Event ErrorLevel="0" Project="" Source="grasp95.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="grasp95.sln" Description="Converted">
+</Event></UpgradeLog>

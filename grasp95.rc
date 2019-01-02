@@ -1,0 +1,640 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\grasp95.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\grasp95.ico"
+IDR_GRASP9TYPE          ICON                    "res\\graspDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar256.bmp"
+IDB_SPLASH              BITMAP                  "RES\\GraspSplash.bmp"
+IDR_DRIVEBAR            BITMAP                  "res\\drivebar256.bmp"
+IDB_LEGEND1             BITMAP                  "RES\\legend1.bmp"
+IDB_LEGEND2             BITMAP                  "RES\\ledgend2.bmp"
+IDB_LOGO                BITMAP                  "RES\\rjl.bmp"
+IDB_DRIVEBAR            BITMAP                  "res\\hcdrivebar.bmp"
+IDB_DRIVEBAR_DISABLED   BITMAP                  "res\\hcdrivebard.bmp"
+IDB_DRIVEBAR_HOT        BITMAP                  "res\\hcdrivebarh.bmp"
+IDB_TOOLBAR             BITMAP                  "res\\hctoolbar.bmp"
+IDB_TOOLBAR_DISABLED    BITMAP                  "res\\hctoolbard.bmp"
+IDB_TOOLBAR_HOT         BITMAP                  "res\\hctoolbarh.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_GRASP_REFRESH
+    BUTTON      ID_GRASP_LIST_CLOSE
+    SEPARATOR
+    BUTTON      ID_GRASP_DIRDISK
+    BUTTON      ID_GRASP_TOPTEN
+    BUTTON      ID_GRASP_LIST_DELETE
+    BUTTON      ID_GRASP_LIST_PROP
+END
+
+IDR_DRIVEBAR TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_DRIVE_A
+    BUTTON      ID_DRIVE_B
+    BUTTON      ID_DRIVE_C
+    BUTTON      ID_DRIVE_E
+    BUTTON      ID_DRIVE_F
+    BUTTON      ID_DRIVE_G
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Drive"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Contents...",           ID_APP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About Grasp...",             ID_APP_ABOUT
+    END
+END
+
+IDR_GRASP9TYPE MENU 
+BEGIN
+    POPUP "&Drive"
+    BEGIN
+        MENUITEM "&Properties",                 ID_FILE_PROP
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Prin&t...",                   ID_FILE_PRINT
+        MENUITEM "Print Pre&view...",           ID_FILE_PRINT_PREVIEW
+        MENUITEM "Print &Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Action"
+    BEGIN
+        MENUITEM "&Open",                       ID_GRASP_LIST_OPEN
+        MENUITEM "&Delete",                     ID_GRASP_LIST_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh",                    ID_GRASP_REFRESH
+        MENUITEM "Up One Level",                ID_GRASP_LIST_CLOSE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Disk vs. Directory",          ID_GRASP_DIRDISK
+        MENUITEM "Top &10 Directories",         ID_GRASP_TOPTEN
+        MENUITEM "&Folder Properties",          ID_GRASP_LIST_PROP
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Contents...",           ID_APP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About Grasp...",             ID_APP_ABOUT
+    END
+END
+
+CG_IDR_POPUP_GRASP_LIST MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Open",                       ID_GRASP_LIST_OPEN
+        MENUITEM "&Delete",                     ID_GRASP_LIST_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties",                 ID_GRASP_LIST_PROP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_APP_HELP,            VIRTKEY, NOINVERT
+    VK_F5,          ID_GRASP_REFRESH,       VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 295, 118
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Grasp"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Graphical Space Viewer 2004",IDC_STATIC,85,16,112,8
+    LTEXT           "Copyright © 1992-2004 Robert LeRoy",IDC_STATIC,85,78,
+                    159,8
+    DEFPUSHBUTTON   "OK",IDOK,248,7,40,15,WS_GROUP
+    LTEXT           "rleroy@cinci.rr.com",IDC_STATIC,85,61,100,9
+    LTEXT           "12050 Cooperwood Ln",IDC_STATIC,85,41,124,9
+    LTEXT           "Cincinnati, OH 45242",IDC_STATIC,85,51,100,9
+    LTEXT           "Robert LeRoy",IDC_STATIC,85,31,100,9
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | SS_SUNKEN,84,26,
+                    156,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | SS_SUNKEN,85,72,
+                    156,1
+    CONTROL         148,IDC_STATIC,"Static",SS_BITMAP,7,7,64,63,
+                    WS_EX_DLGMODALFRAME
+END
+
+CG_IDD_PROGRESS DIALOG  0, 0, 197, 79
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,67,58,50,14
+    CONTROL         "Progress1",CG_IDC_PROGDLG_PROGRESS,"msctls_progress32",
+                    WS_BORDER,15,34,154,13
+    LTEXT           " 0 %",CG_IDC_PROGDLG_PERCENT,89,22,18,8
+    LTEXT           "",CG_IDC_PROGDLG_STATUS,13,7,158,8
+END
+
+IDD_DISK_PROP DIALOG  0, 0, 214, 254
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Disk Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,157,7,50,14
+    RTEXT           "Bytes per Sector:",IDC_STATIC,31,95,91,10
+    RTEXT           "Total Clusters:",IDC_STATIC,31,115,91,10
+    RTEXT           "Drive Size:",IDC_STATIC,27,154,97,10
+    RTEXT           "Sectors per Cluster:",IDC_STATIC,31,105,91,10
+    LTEXT           "Static",IDC_SECTORS,131,104,54,10
+    RTEXT           "Available Space:",IDC_STATIC,27,165,97,10
+    LTEXT           "Static",IDC_BYTES,131,95,54,8
+    LTEXT           "Static",IDC_CLUSTERS,131,115,54,10
+    RTEXT           "Available Clusters:",IDC_STATIC,31,125,91,10
+    RTEXT           "Static",IDC_TOTAL,133,154,54,10
+    RTEXT           "Static",IDC_AVAIL,133,165,54,10
+    RTEXT           "Space Used:",IDC_STATIC,25,176,99,10
+    RTEXT           "Static",IDC_GRASP,133,176,54,10
+    LTEXT           "Static",IDC_AVAILABLE,131,126,54,10
+    GROUPBOX        "Metrics",IDC_STATIC,13,85,194,54
+    LTEXT           "Used Space",IDC_STATIC,25,28,41,10
+    GROUPBOX        "Statistics",IDC_STATIC,13,144,194,48
+    LTEXT           "Free Space",IDC_STATIC,25,46,39,10
+    CONTROL         124,IDC_STATIC,"Static",SS_BITMAP,7,27,13,12
+    CONTROL         123,IDC_STATIC,"Static",SS_BITMAP,7,45,13,12
+    GROUPBOX        "Other",IDC_STATIC,13,197,194,45
+    RTEXT           "Disk Serial Number:",IDC_STATIC,21,207,95,10
+    RTEXT           "File System:",IDC_STATIC,26,217,90,10
+    RTEXT           "Static",IDC_SERIAL_NO,126,207,54,10
+    RTEXT           "Static",IDC_FILE_SYSTEM,126,217,54,10
+    CTEXT           "This drive is compressed",IDC_COMPRESSED,21,228,180,8
+END
+
+IDD_FOLDER_PROP DIALOG  0, 0, 212, 103
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,168,4,37,14
+    RTEXT           "Space Used:",IDC_STATIC,7,42,56,10
+    LTEXT           "Space Used",IDC_FOLDER_SPACE,67,42,104,10
+    RTEXT           "Item Name:",IDC_STATIC,7,10,54,10
+    LTEXT           "Folder Name",IDC_FOLDER_NAME,67,10,99,10
+    RTEXT           "Percent of Drive:",IDC_STATIC,7,74,56,10
+    LTEXT           "Percent Used",IDC_FOLDER_PERCENT,67,74,70,10
+    RTEXT           "Item Type:",IDC_STATIC,7,26,56,10
+    LTEXT           "Folder Type",IDC_FOLDER_TYPE,67,26,100,10
+    RTEXT           "Last Written:",IDC_STATIC,7,58,56,10
+    LTEXT           "Last Written",IDC_LAST_WRITTEN,67,58,70,10
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 285, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Shareware Notice"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Thank you for using GRASP!",IDC_STATIC,71,13,165,10
+    LTEXT           "Use of GRASP is FREE for 30 days.  After 30 days, you must register or stop using this program.  Registered users receive the latest version (with network drive support and printing) and technical assistance.",
+                    IDC_STATIC,71,30,198,35
+    LTEXT           "Refer to the on-line help files for registration information.",
+                    IDC_STATIC,71,73,181,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | SS_SUNKEN,71,25,
+                    202,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | SS_SUNKEN,71,68,
+                    202,1
+    LTEXT           "Copyright © 1997-2002 Vero Software, LLC",IDC_STATIC,71,
+                    85,159,8
+    CONTROL         148,IDC_STATIC,"Static",SS_BITMAP,7,7,52,48,
+                    WS_EX_DLGMODALFRAME
+    DEFPUSHBUTTON   "OK",IDOK,240,7,40,15,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,3,0,7
+ PRODUCTVERSION 4,3,0,7
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Robert LeRoy"
+            VALUE "FileDescription", "Graphical Space Viewer 2004"
+            VALUE "FileVersion", "4, 3, 0, 7"
+            VALUE "InternalName", "GRASP04"
+            VALUE "LegalCopyright", "Copyright (C) 2004 Robert LeRoy - All Rights Reserved."
+            VALUE "OriginalFilename", "grasp2004.exe"
+            VALUE "ProductName", "Grasp Application"
+            VALUE "ProductVersion", "4, 3, 0, 7"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    CG_IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DISK_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_FOLDER_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Graphical Space Viewer"
+    IDR_GRASPTREE           "\nGraspTree\nGraspTree\n\n\nGrasp95.Document\nGrasp9 Document"
+    IDR_GRASPLIST           "\nGraspList\nGraspList\n\n\nGrasp95.Document\nGrasp9 Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "GRASP"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PRINT_SETUP     "Print Setup"
+    ID_FILE_PRINT           "Print the current directory list\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Preview the current directory list\nPreview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    CG_IDS_PHYSICAL_MEM     "%lu KB"
+    CG_IDS_DISK_SPACE       "%lu KB Free on %c:"
+    CG_IDS_DISK_SPACE_UNAVAIL "Unavailable"
+    CG_IDS_PROGRESS_CAPTION "Scanning Drive"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DRIVE_A              "Drive A:\nA:"
+    ID_DRIVE_B              "Drive B:\nB:"
+    ID_DRIVE_C              "Drive C:\nC:"
+    ID_DRIVE_D              "Drive D:\nD:"
+    ID_DRIVE_E              "Drive E:\nE:"
+    ID_DRIVE_F              "Drive F:\nF:"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DRIVE_G              "Drive G:\nG:"
+    ID_DRIVE_H              "Drive H:\nH:"
+    ID_DRIVE_I              "Drive I:\nI:"
+    ID_DRIVE_J              "Drive J:\nJ:"
+    ID_DRIVE_K              "Drive K:\nK:"
+    ID_DRIVE_L              "Drive L:\nL:"
+    ID_DRIVE_M              "Drive M:\nM:"
+    ID_DRIVE_N              "Drive N:\nN:"
+    ID_DRIVE_O              "Drive O:\nO:"
+    ID_DRIVE_P              "Drive P:\nP:"
+    ID_DRIVE_Q              "Drive Q:\nQ:"
+    ID_DRIVE_R              "Drive R:\nR:"
+    ID_DRIVE_S              "Drive S:\nS:"
+    ID_DRIVE_T              "Drive T:\nT:"
+    ID_DRIVE_U              "Drive U:\nU:"
+    ID_DRIVE_V              "Drive V:\nV:"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DRIVE_W              "Drive W:\nW:"
+    ID_DRIVE_X              "Drive X:\nX:"
+    ID_DRIVE_Y              "Drive Y:\nY:"
+    ID_DRIVE_Z              "Drive Z:\nZ:"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TREE                 "This is a Tree Menu"
+    ID_LIST                 "List Menu"
+    ID_GRASP_LIST_OPEN      "Open the selection\nOpen"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GRASP_LIST_PROP      "Display properties for the selection\nProperties"
+    ID_GRASP_LIST_DELETE    "Delete the selection\nDelete"
+    ID_APP_HELP             "Display the contents of the application help files\nHelp"
+    ID_APP_PROP             "Display properties for the drive\nProperties"
+    ID_FILE_PROP            "Display properties for the drive\nProperties"
+    ID_GRASP_LIST_CLOSE     "Goes to the folder one level up\nUp one level"
+    ID_GRASP_REFRESH        "Rescan the drive\nRefresh"
+    ID_GRASP_DIRDISK        "Display size relative to entire disk\nDisk vs. Directory"
+    ID_GRASP_TOPTEN         "List ten biggest directories on the drive\nTop Ten"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUTTON32802          "Drive G:\nG:"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\grasp95.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

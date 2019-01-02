@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Grasp2004", "grasp95.vcproj", "{56067575-8CC0-45D0-8A1A-D888553F80E1}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GraspSetup", "..\GraspSetup\GraspSetup.vdproj", "{0C0418D1-95FD-4EAF-97E1-46B195DFAF61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Share Release|Win32 = Share Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56067575-8CC0-45D0-8A1A-D888553F80E1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{56067575-8CC0-45D0-8A1A-D888553F80E1}.Debug|Win32.Build.0 = Debug|Win32
+		{56067575-8CC0-45D0-8A1A-D888553F80E1}.Release|Win32.ActiveCfg = Release|Win32
+		{56067575-8CC0-45D0-8A1A-D888553F80E1}.Release|Win32.Build.0 = Release|Win32
+		{56067575-8CC0-45D0-8A1A-D888553F80E1}.Share Release|Win32.ActiveCfg = Share Release|Win32
+		{56067575-8CC0-45D0-8A1A-D888553F80E1}.Share Release|Win32.Build.0 = Share Release|Win32
+		{0C0418D1-95FD-4EAF-97E1-46B195DFAF61}.Debug|Win32.ActiveCfg = Debug
+		{0C0418D1-95FD-4EAF-97E1-46B195DFAF61}.Release|Win32.ActiveCfg = Release
+		{0C0418D1-95FD-4EAF-97E1-46B195DFAF61}.Share Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

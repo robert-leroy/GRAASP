@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?>
+<UpgradeLog>
+<Properties><Property Name="Solution" Value="grasp">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\rleroy\Desktop\grasp\grasp.sln">
+</Property><Property Name="User Options File" Value="C:\Documents and Settings\rleroy\Desktop\grasp\grasp.suo">
+</Property><Property Name="Date" Value="Tuesday, August 03, 2004">
+</Property><Property Name="Time" Value="15:09 PM">
+</Property><Property Name="LogNumber" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="grasp.sln" Description="File successfully backed up as C:\Documents and Settings\rleroy\Desktop\grasp\Backup\grasp.sln">
+</Event><Event ErrorLevel="0" Project="" Source="grasp.suo" Description="File successfully backed up as C:\Documents and Settings\rleroy\Desktop\grasp\Backup\grasp.suo">
+</Event><Event ErrorLevel="0" Project="C:\Documents and Settings\rleroy\Desktop\grasp\grasp95.vcproj" Source="grasp95.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="C:\Documents and Settings\rleroy\Desktop\grasp\grasp95.vcproj" Source="grasp95.vcproj" Description="Upgraded">
+</Event><Event ErrorLevel="0" Project="" Source="grasp.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="grasp.sln" Description="Converted">
+</Event></UpgradeLog>
